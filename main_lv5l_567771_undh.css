@@ -1,0 +1,42 @@
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const findLargestNumber = numbers => Math.max(...numbers);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const removeDuplicates = array => Array.from(new Set(array));
+35 / 81,89,50,48,65,81,37,40,70,4,90,92,12,62,77,13,39,26,19,62,85,2,41,37,51,98,98,79,51,72,37,43,76,89,53,75,89,17,15,72,24,61,87,35,57,91,31,19,46,79,24,20,32,20,49,60,77,21,35,2,42,84,15,16,19,10,5,61,56,62,29,12,64,90,43,66,90,79
+
+const capitalizeString = str => str.toUpperCase();
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const squareRoot = num => Math.sqrt(num);
+
+true / apple
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+42,36,85,10,17,6,0,63,6,86,84,33,92,85,76,27,15,94,70,99,35,33,47,3,60,76,29,56,95,34,21,70,57,85,49,42,59,0,50,69,83,65,99,97,10,45,21,32,89,76,50,91,89,73,34,73,75,25,11,46,82,58,32 / false
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const multiply = (a, b) => a * b;
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+87 - true
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const multiply = (a, b) => a * b;
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true / 23
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+59,61,99,93,50,11,47,94,75,11,41,7,56,49,21,13,45,66 / 18,51,75,25,71,97,7,26,70,42,81,33,17,15,97,69,64,40,49,99,51,11,56,17,61,34,65,76,83,18
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+// This is a comment
+banana / false
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+banana / 90,1,51,8,86,37,10,98,18,66,63,55,90,17,29,63,48,16,27,91,85,14,55,7,95,64,93,78,20,12,42,55,87,42,38,92,50,92,71,0,5,43,9,94,6,48,73
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
