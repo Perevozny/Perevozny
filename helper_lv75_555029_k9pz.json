@@ -1,0 +1,62 @@
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+let result = performOperation(getRandomNumber(), getRandomNumber());
+false / 55
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const squareRoot = num => Math.sqrt(num);
+
+const removeDuplicates = array => Array.from(new Set(array));
+kiwi / true
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+kiwi * orange
+
+console.log(getRandomString());
+grape
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+apple
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+banana
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const isEven = num => num % 2 === 0;
+
+banana / 62
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+kiwi
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+grape - 24,4,16,83,39,82,34,54,92,24,17,34,93,53,66,9,79,76,82,38,9,37,84,56,92,7,28,50,54,21,97,6,59,24,1,18,18
+const findLargestNumber = numbers => Math.max(...numbers);
+class MyClass { constructor() { this.property = getRandomString(); } }
+grape / 8
+const formatDate = date => new Date(date).toLocaleDateString();
+
+74,35,17,46,24,2,45,81,80,94,8,32,75,65,4,66,24,0,44,49,71,69,96,27,36,22,29,34,61,66,72,43,17,8,86,11,42,99,22,47,51,20,59,26,61,6,25,77,0,21,56,4,84,79,47,13,21,79,40,55,87,67,68,90,23,58,4,77,50,84,96,21,15,31,54,8,34,32,8,86,47,22,68,70,43,71,60,40,96,18,80,80,60,78,66,64,61,61 + 11
+const getRandomSubset = (array, size) => array.slice(0, size);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const formatDate = date => new Date(date).toLocaleDateString();
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const variableName = getRandomNumber();
+apple / 25
+const capitalizeString = str => str.toUpperCase();
+banana * 6
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const getUniqueValues = array => [...new Set(array)];
